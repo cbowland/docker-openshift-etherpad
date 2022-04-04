@@ -6,7 +6,7 @@ This repository provides an Etherpad Container to be run on Red Hat OpenShift. W
 ----
 oc new-project gpte-etherpad --display-name "OpenTLC Shared Etherpad"
 
-oc new-app --template=postgresql-persistent --param POSTGRESQL_USER=ether --param POSTGRESQL_PASSWORD=ether --param POSTGRESQL_DATABASE=etherpad --param POSTGRESQL_VERSION=10 --param VOLUME_CAPACITY=10Gi --labels=app=etherpad_db
+oc new-app --template=postgresql-persistent --param POSTGRESQL_USER=ether --param POSTGRESQL_PASSWORD=ether --param POSTGRESQL_DATABASE=etherpad --param POSTGRESQL_VERSION=12 --param VOLUME_CAPACITY=10Gi --labels=app=etherpad_db
 
 sleep 15
 
